@@ -42,16 +42,6 @@ android {
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            groupId = 'com.semid.qrcodescanner'
-            artifactId = 'codeScanner'
-            version = '1.0'
-        }
-    }
-}
-
-publishing {
-    publications {
         maven(MavenPublication) {
             groupId 'com.semid.qrcodescanner' //You can either define these here or get them from project conf elsewhere
             artifactId 'codeScanner'
