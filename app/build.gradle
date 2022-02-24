@@ -39,7 +39,6 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
                 groupId = 'com.semid.qrcodescanner'
                 artifactId = 'codeScanner'
                 version = '1.0'
