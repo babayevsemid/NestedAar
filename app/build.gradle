@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
     id 'kotlin-android'
     id 'maven-publish'
 }
@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-//        applicationId "com.codescanner"
+        applicationId "com.codescanner"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -71,7 +71,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    compileOnly files('libs/codeScanner.aar')
     implementation files('libs/codeScanner.aar')
 
     implementation 'com.github.babayevsemid:FileChooser:1.5.2'
