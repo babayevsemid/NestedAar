@@ -36,6 +36,16 @@ android {
     }
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.semid.qrcodescanner'
+            artifactId = 'codeScanner'
+            version = '1.1'
+        }
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 
