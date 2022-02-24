@@ -38,7 +38,7 @@ android {
 afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
+            mavenJava(MavenPublication) {
                 groupId = 'com.semid.qrcodescanner'
                 artifactId = 'codeScanner'
                 version = '1.0'
