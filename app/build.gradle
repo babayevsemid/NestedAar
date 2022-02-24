@@ -52,9 +52,6 @@ android {
 //    }
 //}
 
-configurations.maybeCreate("default")
-artifacts.add("default", file('[codeScanner].aar'))
-
 dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
